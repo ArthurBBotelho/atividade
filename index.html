@@ -9,8 +9,11 @@
 </head>
 
 <body>
+
+
     <h1>Bolo de Cenoura com Cobertura de Chocolate</h1>
     <p>Receita de Bolo de Cenoura com cobertura de brigadeiro de Leite MOÇA e chocolate granulado</p>
+
     <hr>
 
     <h2>Igrdientes</h2>
@@ -38,6 +41,63 @@
             sempre, até começar a desprender da panela.</li>
         <li>Despeje ainda quente sobre o bolo, distribua o chocolate granulado e deixe esfriar.</li>
     </ol>
+
+    <table border>
+        <th>Frutas</th>
+        <th>Verduras</th>
+        <th>Grãos</th>
+        <tr><!-- início da primeira linha-->
+            <td>Maçã</td>
+            <td>Alface</td>
+            <td>Amendoim</td>
+            <td>Amendoa</td>
+        </tr><!-- final da primeira linha -->
+        <tr><!-- início da segunda linha-->
+            <td>Laranja</td>
+            <td>Beterraba</td>
+            <td>Trigo</td>
+        </tr><!-- final da segunda linha -->
+    </table>
+
+    <br><br><br>
+
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <span>Genero:</span>
+            <br>
+            <input type="radio" name="genero" value="masculino"></inpt>
+            <span>Masculino</span>
+            <input type="radio" name="genero" value="feminino"></inpt>
+            <span>Feminino</span>
+            <input type="radio" name="genero" value="outro"></inpt>
+            <span>Outro <input type="text" name="nome" /></span>
+            <br><br>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" />
+                <br>
+                <label for="nome">Sobrenome:</label>
+                <input type="text" name="sobrenome" />
+            </form>
+            <br><br>
+            <form>
+                <span>Tamanhos:</span>
+
+                <select name="tamanhos">
+                    <option value="G">Grande</option>
+                    <option value="M">Médio</option>
+                    <option value="P">Pequeno</option>
+                </select>
+            </form>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </fieldset>
+    </form>
+
+
 </body>
 
 </html>
