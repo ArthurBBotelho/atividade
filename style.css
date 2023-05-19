@@ -2,18 +2,52 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+.container {
+
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "header header header"
+        "content content sidebar"
+        "content content sidebar"
+        "content content sidebar"
+    ;
 }
 
 .header {
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
     grid-area: header;
+    background-color: red;
 }
 
 .content {
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
     grid-area: content;
+    background-color: blue;
 }
 
 .sidebar {
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
     grid-area: sidebar;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1, 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "header"
+            "content"
+            "content"
+            "content"
+            "sidebar";
+    }
 }
